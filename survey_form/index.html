@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <div class="page">
+            <div class="header">
+                <div class="cover">
+                    <h1 id="title">Arsenal Performance Review</h1>
+                    <p id="description">Premier League Season 2021/2022</p>
+                </div>
+            </div>
+            <form id="survey-form" action="">
+                <fieldset>
+                    <label id="name-label" for="name">Name</label>
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Enter your name"
+                        required
+                    />
+                    <label id="email-label" for="email">Email</label>
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required
+                    />
+                </fieldset>
+                <fieldset class="row-container">
+                    <label id="number-label" for="number"
+                        >Overall Score
+                        <input
+                            type="number"
+                            name="number"
+                            id="number"
+                            placeholder="Enter your rate"
+                            min="0"
+                            max="10"
+                        />
+                    </label>
+                    <label id="dropdown-label" for="dropdown">
+                        Best Player
+                        <select name="type" id="dropdown">
+                            <option value="" disabled selected>
+                                Select one
+                            </option>
+                            <option value="Bukayo Saka">Bukayo Saka</option>
+                            <option value="Martin Odegaard">
+                                Martin Odegaard
+                            </option>
+                            <option value="Gabriel Magalhaes">
+                                Gabriel Magalhaes
+                            </option>
+                            <option value="Eddie Nketiah">Eddie Nketiah</option>
+                            <option value="Aaron Ramsdale">
+                                Aaron Ramsdale
+                            </option>
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset class="row-container">
+                    <div id="stay">
+                        <label>Should Arteta Stay?</label>
+                        <div class="radio-container">
+                            <label for="Yes" class="radio-label"
+                                ><input
+                                    type="radio"
+                                    name="radio"
+                                    id="Yes"
+                                    value="Yes"
+                                />
+                                Yes</label
+                            >
+                            <label for="No" class="radio-label"
+                                ><input
+                                    type="radio"
+                                    name="radio"
+                                    id="No"
+                                    value="No"
+                                />
+                                No</label
+                            >
+                        </div>
+                    </div>
+                    <div id="opinion">
+                        <label for="opinion">Your wish for next season</label>
+                        <textarea name="opinion" id="user-opinion"></textarea>
+                    </div>
+                </fieldset>
+                <fieldset class="submit-container">
+                    <div>
+                        <label for="support"
+                            ><input
+                                type="checkbox"
+                                name="support"
+                                id="support"
+                                value="support"
+                            />
+                            I will always support Arsenal</label
+                        >
+                        <label for="contact"
+                            ><input
+                                type="checkbox"
+                                name="contact"
+                                id="contact"
+                                value="contact"
+                            />
+                            Contact me for more details</label
+                        >
+                    </div>
+                    <input type="submit" id="submit" value="Submit" />
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>

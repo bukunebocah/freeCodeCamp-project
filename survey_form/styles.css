@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+.page {
+    background-color: salmon;
+    width: 600px;
+    height: auto;
+    margin: 70px auto;
+    border-radius: 10px;
+}
+
+.header {
+    height: 200px;
+    background-image: url(https://media.gettyimages.com/photos/arsenal-players-celebrate-arsenals-french-striker-alexandre-lacazette-picture-id1239164812?s=2048x2048);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.cover {
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+}
+
+#title {
+    font-size: 1.5em;
+    color: white;
+}
+
+#description {
+    font-size: 1.1em;
+    color: white;
+}
+
+label,
+input,
+select {
+    display: block;
+    margin: 10px 0;
+}
+
+fieldset {
+    padding: 10px 20px;
+    border: none;
+}
+
+label {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+#name,
+#email,
+#number,
+#dropdown,
+#user-opinion {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    background-color: darksalmon;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+#user-opinion {
+    height: 100px;
+}
+
+#name::placeholder,
+#email::placeholder,
+#number::placeholder,
+#dropdown::placeholder {
+    color: lightgray;
+}
+
+.row-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#number-label,
+#dropdown-label,
+#stay,
+#opinion {
+    width: 50%;
+    padding: 5px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: inline;
+    margin-right: 5px;
+}
+
+.radio-label {
+    margin-right: 40px;
+}
+
+.radio-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.submit-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+input[type="submit"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+}
